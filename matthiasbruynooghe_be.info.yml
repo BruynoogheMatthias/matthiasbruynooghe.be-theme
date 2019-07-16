@@ -1,0 +1,16 @@
+name: matthiasbruynooghe.be
+type: theme
+description: 'Theme for matthiasbruynooghe.be'
+package: Other
+core: 8.x
+libraries:
+  - matthiasbruynooghe_be/global-styling
+ 
+base theme: false
+
+regions:
+  header: header
+  left_sidebar: Left sidebar
+  right_sidebar: Right sidebar
+  content: Content
+  footer: footer
