@@ -1,0 +1,74 @@
+@import "_reset.scss";
+
+/* colors */
+$main: black;
+$sub: #555;
+$counter: white;
+
+/* breakpoints */
+$computer: "screen and (min-width:1000px)";
+
+body{
+	font-family: 'IBM Plex Mono', Courier, monospace;
+}
+
+
+header {
+	background-color: $main;
+	padding: 3vh;
+	.headerTitle {
+		font-size: 50px;
+		color: $counter;
+	}
+
+	nav {
+		margin-top: 0.5vh;
+
+		ul {
+			display: flex;
+
+			li {
+				margin: 1vh;
+				a {
+					color: $counter;
+					text-decoration: none;
+				}
+			}
+			:first-child{
+				margin-left:0 ;
+
+			}
+		}
+	}
+}
+
+.page {
+	display: flex;
+
+	.left-sidebar {
+
+		display: none;
+		background-color: $sub;
+		@media #{$computer} {
+			display: block;
+			flex-grow: 1;
+			min-width: 200px;
+		}
+	}
+	main{
+		flex-grow: 4;
+		flex-shrink: 0;
+	}
+	.right-sidebar{
+		display: none;
+
+		@media #{$computer} {
+			display: block;
+			flex-grow: 1;
+			min-width: 200px;
+		}
+	}
+	&>*{
+		flex-basis: 0;
+	}
+}
