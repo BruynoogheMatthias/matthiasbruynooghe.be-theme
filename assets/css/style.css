@@ -76,35 +76,35 @@ header nav ul :first-child {
   margin-left: 0;
 }
 
-.page {
+.flex-wrapper {
   display: flex;
 }
-.page .left-sidebar {
+.flex-wrapper .left-sidebar {
   display: none;
   background-color: #555;
 }
 @media screen and (min-width:1000px) {
-  .page .left-sidebar {
+  .flex-wrapper .left-sidebar {
     display: block;
     flex-grow: 1;
     min-width: 200px;
   }
 }
-.page main {
+.flex-wrapper main {
   flex-grow: 4;
   flex-shrink: 0;
 }
-.page .right-sidebar {
+.flex-wrapper .right-sidebar {
   display: none;
 }
 @media screen and (min-width:1000px) {
-  .page .right-sidebar {
+  .flex-wrapper .right-sidebar {
     display: block;
     flex-grow: 1;
     min-width: 200px;
   }
 }
-.page > * {
+.flex-wrapper > * {
   flex-basis: 0;
 }
 

@@ -50,30 +50,30 @@
   <header role="banner">
     {{ page.header }}
   </header>
-
-  {% if page.left_sidebar %}
-    <aside class="left-sidebar" role="complementary">
-      {{ page.left_sidebar }}
-    </aside>
-  {% endif %}
-
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
-
-
-
-    {% if page.right_sidebar %}
-      <aside class="right-sidebar" role="complementary">
-        {{ page.right_sidebar }}
+  <div class="flex-wrapper">
+    {% if page.left_sidebar %}
+      <aside class="left-sidebar" role="complementary">
+        {{ page.left_sidebar }}
       </aside>
     {% endif %}
 
-  </main>
+    <main role="main">
+      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
+      <div class="layout-content">
+        {{ page.content }}
+      </div>{# /.layout-content #}
+
+
+
+      {% if page.right_sidebar %}
+        <aside class="right-sidebar" role="complementary">
+          {{ page.right_sidebar }}
+        </aside>
+      {% endif %}
+
+    </main>
+  </div>
   {% if page.footer %}
     <footer role="contentinfo">
       {{ page.footer }}
