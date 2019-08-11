@@ -57,6 +57,7 @@ header {
 header .headerTitle {
   font-size: 50px;
   color: white;
+  text-decoration: none;
 }
 header nav {
   margin-top: 0.5vh;
