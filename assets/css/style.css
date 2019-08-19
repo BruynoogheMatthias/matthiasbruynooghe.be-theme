@@ -78,6 +78,7 @@ header nav ul :first-child {
 
 .flex-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 .flex-wrapper .left-sidebar {
   display: none;
@@ -93,6 +94,7 @@ header nav ul :first-child {
 .flex-wrapper main {
   flex-grow: 4;
   flex-shrink: 0;
+  margin-left: 4vw;
 }
 .flex-wrapper main h1 a, .flex-wrapper main h2 a, .flex-wrapper main h3 a, .flex-wrapper main h4 a {
   color: inherit;
