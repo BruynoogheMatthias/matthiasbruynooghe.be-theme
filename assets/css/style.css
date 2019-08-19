@@ -79,8 +79,7 @@ header nav ul :first-child {
 .flex-wrapper {
   display: flex;
   justify-content: space-between;
-  height: 87vh;
-  height: -webkit-fill-available;
+  min-height: 87vh;
 }
 .flex-wrapper .left-sidebar {
   display: none;
