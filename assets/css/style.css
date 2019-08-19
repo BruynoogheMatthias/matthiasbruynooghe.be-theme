@@ -119,6 +119,7 @@ header nav ul :first-child {
 }
 .flex-wrapper > * {
   flex-basis: 0;
+  padding-top: 4vh;
 }
 
 footer {
