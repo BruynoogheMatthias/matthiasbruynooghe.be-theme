@@ -107,5 +107,9 @@ header nav ul :first-child {
 .flex-wrapper > * {
   flex-basis: 0;
 }
+.flex-wrapper footer {
+  margin-top: 2vh;
+  border-top: 2px solid black;
+}
 
 /*# sourceMappingURL=style.css.map */
