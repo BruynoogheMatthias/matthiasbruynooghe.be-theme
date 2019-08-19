@@ -109,8 +109,18 @@ header nav ul :first-child {
 }
 
 footer {
-  margin-top: 2vh;
-  border-top: 2px black;
+  border-top: 2px solid black;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  height: 3vh;
+  padding-top: 1vh;
+  padding-left: 2vw;
+  background-color: black;
+  color: white;
+}
+footer a {
+  color: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */
