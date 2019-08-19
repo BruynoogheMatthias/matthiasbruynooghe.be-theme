@@ -94,6 +94,16 @@ header nav ul :first-child {
   flex-grow: 4;
   flex-shrink: 0;
 }
+.flex-wrapper main h1 a, .flex-wrapper main h2 a, .flex-wrapper main h3 a, .flex-wrapper main h4 a {
+  color: inherit;
+  text-decoration: none;
+}
+.flex-wrapper main h1 {
+  font-size: 2.5rem;
+}
+.flex-wrapper main h2 {
+  font-size: 2rem;
+}
 .flex-wrapper .right-sidebar {
   display: none;
 }
