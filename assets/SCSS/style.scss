@@ -50,6 +50,7 @@ header {
 .flex-wrapper {
   display: flex;
   justify-content: space-between;
+height: 100vh;
   height: -webkit-fill-available;
 
   .left-sidebar {
